@@ -1,0 +1,10 @@
+name: CI
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  test:
+    uses: mrlee.io/reusable_workflow/.github/workflows/reusable/test.yml@main
+    with:
+      rails_command: test
